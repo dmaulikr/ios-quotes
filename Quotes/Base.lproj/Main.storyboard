@@ -29,26 +29,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml4-37-k0m">
-                                                    <rect key="frame" x="8" y="8" width="52" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml4-37-k0m">
+                                                    <rect key="frame" x="8" y="8" width="584" height="20"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxF-nc-ErN">
-                                                    <rect key="frame" x="8" y="37" width="584" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxF-nc-ErN">
+                                                    <rect key="frame" x="30" y="42" width="540" height="19"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ZxF-nc-ErN" firstAttribute="leading" secondItem="GtZ-HZ-ajZ" secondAttribute="leadingMargin" id="5sV-u1-FEP"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ZxF-nc-ErN" secondAttribute="bottom" constant="14" id="HJd-rf-ZyO"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ZxF-nc-ErN" secondAttribute="trailing" id="PYS-Kc-fsb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ml4-37-k0m" secondAttribute="trailing" id="7xM-xc-Ho3"/>
+                                                <constraint firstItem="ZxF-nc-ErN" firstAttribute="leading" secondItem="GtZ-HZ-ajZ" secondAttribute="leadingMargin" constant="22" id="DTS-vl-uCB"/>
                                                 <constraint firstItem="ml4-37-k0m" firstAttribute="leading" secondItem="GtZ-HZ-ajZ" secondAttribute="leadingMargin" id="Rp6-uW-Xju"/>
-                                                <constraint firstItem="ZxF-nc-ErN" firstAttribute="top" secondItem="ml4-37-k0m" secondAttribute="bottom" constant="8" id="pDS-LD-tQi"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZxF-nc-ErN" secondAttribute="bottom" constant="11" id="rFT-f0-Jba"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZxF-nc-ErN" secondAttribute="trailing" constant="22" id="s0e-mN-EMR"/>
                                                 <constraint firstItem="ml4-37-k0m" firstAttribute="top" secondItem="GtZ-HZ-ajZ" secondAttribute="topMargin" id="uTx-P5-Wo9"/>
+                                                <constraint firstItem="ZxF-nc-ErN" firstAttribute="top" secondItem="ml4-37-k0m" secondAttribute="bottom" constant="14" id="uUI-B2-rPL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
