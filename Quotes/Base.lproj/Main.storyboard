@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vet-hL-RUs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Quotes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rYd-JH-uvj">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuoteCell" rowHeight="80" id="TLR-8M-5nf" customClass="QuoteCell" customModule="Quotes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TLR-8M-5nf" id="GtZ-HZ-ajZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml4-37-k0m">
@@ -68,11 +68,66 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rYd-JH-uvj" secondAttribute="bottom" id="jHJ-L6-RFU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Quotes" id="Qlo-QA-RTE"/>
                     <connections>
                         <outlet property="tableView" destination="rYd-JH-uvj" id="OKG-Qc-DSb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--Maps-->
+        <scene sceneID="e8h-kX-qqi">
+            <objects>
+                <viewController id="6F3-ah-vRg" customClass="MapViewController" customModule="Quotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7gQ-jd-jOO"/>
+                        <viewControllerLayoutGuide type="bottom" id="GYa-V3-fcp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ze-Je-CAY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-Lg-CMr">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6F3-ah-vRg" id="VTX-FJ-iTk"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f9W-Lg-CMr" firstAttribute="leading" secondItem="4ze-Je-CAY" secondAttribute="leading" id="Cd0-nE-yfl"/>
+                            <constraint firstItem="f9W-Lg-CMr" firstAttribute="top" secondItem="7gQ-jd-jOO" secondAttribute="bottom" id="dak-aI-3Jf"/>
+                            <constraint firstAttribute="trailing" secondItem="f9W-Lg-CMr" secondAttribute="trailing" id="gz5-V0-dVe"/>
+                            <constraint firstItem="GYa-V3-fcp" firstAttribute="top" secondItem="f9W-Lg-CMr" secondAttribute="bottom" id="qkQ-GK-QyE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Maps" id="hXH-6s-Dz9"/>
+                    <connections>
+                        <outlet property="mapView" destination="f9W-Lg-CMr" id="5jh-75-CKo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKL-03-hok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="1182"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pdH-ed-yej">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vet-hL-RUs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="euS-14-1d3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="22t-D4-hKx"/>
+                        <segue destination="6F3-ah-vRg" kind="relationship" relationship="viewControllers" id="pfV-8g-TCP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nvs-ES-Dg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
         </scene>

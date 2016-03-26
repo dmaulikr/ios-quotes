@@ -15,6 +15,7 @@
 		103C1D7C1CA5A9A40055DA95 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C1D7B1CA5A9A40055DA95 /* QuoteCell.swift */; };
 		103C1D7E1CA5ABA50055DA95 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C1D7D1CA5ABA50055DA95 /* Quote.swift */; };
 		103C1D801CA5AC060055DA95 /* QuotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C1D7F1CA5AC060055DA95 /* QuotesDataSource.swift */; };
+		10A6A9CE1CA640CB00E2ED29 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A6A9CD1CA640CB00E2ED29 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		103C1D7B1CA5A9A40055DA95 /* QuoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
 		103C1D7D1CA5ABA50055DA95 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		103C1D7F1CA5AC060055DA95 /* QuotesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesDataSource.swift; sourceTree = "<group>"; };
+		10A6A9CD1CA640CB00E2ED29 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				103C1D691CA5A3F50055DA95 /* AppDelegate.swift */,
 				103C1D6B1CA5A3F50055DA95 /* ViewController.swift */,
+				10A6A9CD1CA640CB00E2ED29 /* MapViewController.swift */,
 				103C1D6D1CA5A3F50055DA95 /* Main.storyboard */,
 				103C1D811CA5ADCC0055DA95 /* QuoteData */,
 				103C1D701CA5A3F50055DA95 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				103C1D7E1CA5ABA50055DA95 /* Quote.swift in Sources */,
+				10A6A9CE1CA640CB00E2ED29 /* MapViewController.swift in Sources */,
 				103C1D7C1CA5A9A40055DA95 /* QuoteCell.swift in Sources */,
 				103C1D6C1CA5A3F50055DA95 /* ViewController.swift in Sources */,
 				103C1D801CA5AC060055DA95 /* QuotesDataSource.swift in Sources */,
@@ -308,6 +312,7 @@
 				103C1D7A1CA5A3F50055DA95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
